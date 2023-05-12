@@ -1,0 +1,158 @@
+body{
+
+    background-color: rgb(0, 0, 0);
+margin:0;
+
+}
+
+
+.my_name{
+    font-family: 'OpenSans-Bold';
+   
+    position: absolute;
+    top:25vh;
+    left:50%;
+    width: 400px;
+    height:400px;
+    line-height: 55px;
+    text-align: center;
+    color:white;
+    Text-shadow: 2px 2px  2px #020101;
+    font-size:1vh;
+    
+    }
+    
+    @font-face {
+        font-family: 'OpenSans-Bold';
+        src: url('OpenSans-Bold.ttf'); 
+       }
+    
+
+
+
+
+
+
+.wysuniecie_glowy_z_lewej{
+
+animation:1s lefted forwards;
+position: absolute;
+left:22%;
+width:400px;
+height:200px;
+top:-30vh;
+z-index: -1;
+}
+
+@keyframes lefted{
+
+    from{transform: scale(0)}
+    to{top:23vh;left:17%;transform:scale(1)}
+    
+    }
+
+#head{
+
+width:100%; height: auto; position: absolution;z-index: 1;
+top:5%; 
+
+}
+
+
+#gear{
+
+ width:140px; 
+ height: auto;z-index: 2;
+ top:79px;
+position: absolute;
+left:6vh;
+animation: 15s obrot infinite linear;
+}
+
+
+
+@keyframes obrot{
+
+from{transform:rotate(-720deg);}
+to{transform:rotate(720deg);}
+
+
+}
+
+
+#gear1{
+
+    width:110px; 
+    height: auto;z-index: 2;
+    top:25px;
+   position: absolute;
+   left:165px;
+   animation: 8s obrot1 infinite linear;
+   }
+   
+   @keyframes obrot1{
+
+    from{transform:rotate(720deg);}
+    to{transform:rotate(-720deg);}
+    
+    
+    }
+
+
+    #gear2{
+
+        width:100px; 
+        height: auto;z-index: 2;
+        top:185px;
+       position: absolute;
+       left:150px;
+       animation: 9s obrot2 infinite linear;
+       }
+       
+       @keyframes obrot2{
+    
+        from{transform:rotate(720deg);}
+        to{transform:rotate(-720deg);}
+        
+        
+        }
+    
+    .presents{
+ position: absolute;
+ left:42%;
+ top:35vh;
+ font-size:14vh;
+ color: rgb(218, 218, 218);
+ display:inline;
+
+ font-family: 'Paytone One', sans-serif;
+
+ font-family: 'Carter One', cursive;
+
+ font-family: 'Wendy One', sans-serif;
+
+ font-family: 'Bowlby One SC', cursive;
+
+ font-family: 'Baloo Paaji', cursive;
+text-align:center;
+    }
+
+
+#open_mind{
+animation:1s rotatio forwards;
+animation-delay: 1s;
+float: left;
+toP:10vh;
+margin-left: 1vh;
+transform: scale(0);
+}
+
+@keyframes rotatio{
+
+
+from{ transform: rotateY(180deg);transform: scale(0);}
+to{ transform: rotateY(0deg);transform: scale(1);}
+
+
+
+}
